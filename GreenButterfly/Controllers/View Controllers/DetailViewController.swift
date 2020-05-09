@@ -12,7 +12,15 @@ class DetailViewController: UIViewController {
 
     var habit: Habit?
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        updateUI()
+    }
+    
+    func updateUI(){
+        guard let habit = habit else {return}
+        titleLabel.text = habit.title
     }
 }
