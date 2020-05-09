@@ -12,10 +12,14 @@ import CoreData
 class AddHabitsTableViewController: UITableViewController {
     
     var habits: [Habit] = []
+    
+    override func viewWillAppear(_ animated: Bool) {
+         habits = HabitController.shared.habits.filter({$0.enabled == false})
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.allowsMultipleSelection = true
-        habits = HabitController.shared.habits.filter({ $0.enabled == false})
+        habits = HabitController.shared.habits.filter({$0.enabled == false})
     }
     //MARK: - IB Actions
     @IBAction func doneTapped(_ sender: Any) {
@@ -44,6 +48,9 @@ class AddHabitsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.accessoryType = .checkmark
+        let habit = habits[indexPath.row]
+        HabitController.shared.enableToggle(habit: habit)
+        print("\(habit.title) \(habit.enabled)")
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
