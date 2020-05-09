@@ -15,9 +15,11 @@ class HabitListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         habits = HabitController.shared.habits.filter({$0.enabled == true})
+        tableView.allowsSelection = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        habits = HabitController.shared.habits.filter({$0.enabled == true})
         tableView.reloadData()
     }
     
@@ -36,7 +38,9 @@ class HabitListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let habit = habits[indexPath.row]
-            HabitController.shared.remove(habit: habit)
+            habits.remove(at: indexPath.row)
+            HabitController.shared.enableToggle(habit: habit)
+            tableView.deleteRows(at: [indexPath], with: .left)
         }
     }
     
