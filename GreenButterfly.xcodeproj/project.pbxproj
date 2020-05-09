@@ -10,6 +10,7 @@
 		C53A43BB24661D6D00BDB22E /* HabitListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */; };
 		C53A43BD24661F6500BDB22E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43BC24661F6500BDB22E /* DetailViewController.swift */; };
 		C53A43BF2466D9C500BDB22E /* AddHabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */; };
+		C53A43C32467300800BDB22E /* HabitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43C22467300700BDB22E /* HabitTableViewCell.swift */; };
 		C5794DB024646A8000DE2554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5794DAF24646A8000DE2554 /* AppDelegate.swift */; };
 		C5794DB224646A8000DE2554 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5794DB124646A8000DE2554 /* SceneDelegate.swift */; };
 		C5794DB724646A8000DE2554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5794DB524646A8000DE2554 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListTableViewController.swift; sourceTree = "<group>"; };
 		C53A43BC24661F6500BDB22E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitsTableViewController.swift; sourceTree = "<group>"; };
+		C53A43C22467300700BDB22E /* HabitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTableViewCell.swift; sourceTree = "<group>"; };
 		C5794DAC24646A8000DE2554 /* GreenButterfly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenButterfly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5794DAF24646A8000DE2554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C5794DB124646A8000DE2554 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C53A43C42467315000BDB22E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */,
+				C53A43BC24661F6500BDB22E /* DetailViewController.swift */,
+				C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C53A43C52467315A00BDB22E /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C5794DD02464DC0200DE2554 /* HabitController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		C53A43C62467316400BDB22E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C53A43C52467315A00BDB22E /* Model Controllers */,
+				C53A43C42467315000BDB22E /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		C5794DA324646A8000DE2554 = {
 			isa = PBXGroup;
 			children = (
@@ -69,10 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C5794DD22464DE0A00DE2554 /* Model */,
-				C5794DD02464DC0200DE2554 /* HabitController.swift */,
-				C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */,
-				C53A43BC24661F6500BDB22E /* DetailViewController.swift */,
-				C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */,
+				C53A43C62467316400BDB22E /* Controllers */,
 				C5794DCB2464DA7100DE2554 /* Views */,
 				C5794DC624646AAB00DE2554 /* Resources */,
 				C5794DB824646A8000DE2554 /* GreenButterfly.xcdatamodeld */,
@@ -105,6 +131,7 @@
 			children = (
 				C5794DCC2464DA8600DE2554 /* CoreDataStack.swift */,
 				C5794DCE2464DB5100DE2554 /* Habit+Convenience.swift */,
+				C53A43C22467300700BDB22E /* HabitTableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +209,7 @@
 			files = (
 				C5794DBA24646A8000DE2554 /* GreenButterfly.xcdatamodeld in Sources */,
 				C5794DCF2464DB5100DE2554 /* Habit+Convenience.swift in Sources */,
+				C53A43C32467300800BDB22E /* HabitTableViewCell.swift in Sources */,
 				C5794DD12464DC0200DE2554 /* HabitController.swift in Sources */,
 				C5794DB024646A8000DE2554 /* AppDelegate.swift in Sources */,
 				C53A43BB24661D6D00BDB22E /* HabitListTableViewController.swift in Sources */,

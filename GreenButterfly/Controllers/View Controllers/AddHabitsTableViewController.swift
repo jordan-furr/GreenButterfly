@@ -56,6 +56,9 @@ class AddHabitsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.accessoryType = .none
+        let habit = habits[indexPath.row]
+        HabitController.shared.enableToggle(habit: habit)
+        print("\(habit.title) \(habit.enabled)")
     }
     
 }

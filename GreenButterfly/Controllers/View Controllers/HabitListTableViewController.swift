@@ -15,9 +15,11 @@ class HabitListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         habits = HabitController.shared.habits.filter({$0.enabled == true})
+        tableView.allowsSelection = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        habits = HabitController.shared.habits.filter({$0.enabled == true})
         tableView.reloadData()
     }
     
@@ -27,16 +29,19 @@ class HabitListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "habitCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "habitCell", for: indexPath) as? HabitTableViewCell else {return UITableViewCell()}
         let habit = habits[indexPath.row]
-        cell.textLabel?.text = habit.title
+        cell.setHabit(habit: habit)
+        cell.delegate = self
         return cell
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             let habit = habits[indexPath.row]
-            HabitController.shared.remove(habit: habit)
+            habits.remove(at: indexPath.row)
+            HabitController.shared.enableToggle(habit: habit)
+            tableView.deleteRows(at: [indexPath], with: .left)
         }
     }
     
@@ -49,5 +54,19 @@ class HabitListTableViewController: UITableViewController {
                 }
             }
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100.0
+    }
+}
+
+extension HabitListTableViewController: HabitTableViewCellDelegate {
+    func tappedButton(for cell: HabitTableViewCell) {
+        guard let habit = cell.habit else {return}
+        HabitController.shared.updateCounter(habit: habit)
+        cell.updateUI()
+        print("tapped")
+        
     }
 }
