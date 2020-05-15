@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VR2-Rg-3zK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7e5-Vr-ft9">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -10,11 +10,11 @@
         <!--Item 2-->
         <scene sceneID="oby-cb-pfc">
             <objects>
-                <viewController id="a2B-cY-BTU" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="a2B-cY-BTU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JgY-C2-zvZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0081794057039999996" green="0.61281424760000003" blue="0.37149119380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="KWb-9R-bW7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="dhk-7T-TwZ"/>
@@ -23,10 +23,42 @@
             </objects>
             <point key="canvasLocation" x="80" y="77"/>
         </scene>
+        <!--Launch View Controller-->
+        <scene sceneID="l4y-cO-JOV">
+            <objects>
+                <viewController id="7e5-Vr-ft9" customClass="LaunchViewController" customModule="GreenButterfly" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="syf-JV-Vnd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-7V-z70">
+                                <rect key="frame" x="41" y="152" width="331" height="331"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bjx-7V-z70" secondAttribute="height" multiplier="1:1" id="hyH-ee-c35"/>
+                                </constraints>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.68025329082854946" green="0.78630631345177671" blue="0.72736355431757604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bjx-7V-z70" firstAttribute="centerX" secondItem="yvB-an-h60" secondAttribute="centerX" id="InJ-QY-B2E"/>
+                            <constraint firstItem="bjx-7V-z70" firstAttribute="centerY" secondItem="yvB-an-h60" secondAttribute="centerY" multiplier="0.7" id="fEo-Ht-8lC"/>
+                            <constraint firstItem="bjx-7V-z70" firstAttribute="width" secondItem="syf-JV-Vnd" secondAttribute="width" multiplier="0.8" id="lqX-gH-3hn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yvB-an-h60"/>
+                    </view>
+                    <connections>
+                        <outlet property="viewforlayer" destination="bjx-7V-z70" id="PpR-ZW-zdu"/>
+                        <segue destination="VR2-Rg-3zK" kind="show" id="Qbw-Mz-Wes"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urG-EQ-cTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1654" y="-247"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Mw-y9-gXk">
             <objects>
-                <tabBarController id="VR2-Rg-3zK" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="VR2-Rg-3zK" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rRJ-mA-llE"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Yz-ky-tzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -34,7 +66,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8ED-Za-pWv" kind="relationship" relationship="viewControllers" id="gZD-Bt-iMf"/>
+                        <segue destination="Ycw-iC-fXG" kind="relationship" relationship="viewControllers" id="gZD-Bt-iMf"/>
                         <segue destination="a2B-cY-BTU" kind="relationship" relationship="viewControllers" id="bNl-Z0-pjS"/>
                     </connections>
                 </tabBarController>
@@ -42,97 +74,15 @@
             </objects>
             <point key="canvasLocation" x="-861" y="-247"/>
         </scene>
-        <!--GREEN BUTTERFLY-->
-        <scene sceneID="byz-S2-y6I">
+        <!--Home-->
+        <scene sceneID="JS8-LB-HCm">
             <objects>
-                <tableViewController id="pxp-fN-fOO" customClass="HabitListTableViewController" customModule="GreenButterfly" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LXX-bw-Apg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="habitCell" id="N45-br-ET1">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N45-br-ET1" id="buO-Vd-aHK">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.89014369250000003" green="0.60301584009999998" blue="0.21863043309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="pxp-fN-fOO" id="StJ-mc-jNO"/>
-                            <outlet property="delegate" destination="pxp-fN-fOO" id="f6E-mx-qMI"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="GREEN BUTTERFLY" id="U2t-zt-xh6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bud-Qr-fvu">
-                            <connections>
-                                <segue destination="Y1M-gT-lmq" kind="show" id="u6w-5J-yzA"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dOR-ko-dQu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Home" id="Ycw-iC-fXG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="61n-Ba-8cK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jPV-sV-ge7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.10144927536237" y="-705.13392857142856"/>
-        </scene>
-        <!--Add habits to home page-->
-        <scene sceneID="Nsd-tg-teb">
-            <objects>
-                <tableViewController id="Y1M-gT-lmq" customClass="AddHabitsTableViewController" customModule="GreenButterfly" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="4gs-Aa-KLX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="newHabitCell" id="b5f-FN-wsN">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b5f-FN-wsN" id="pzq-FK-mfm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Y1M-gT-lmq" id="b2d-Bq-pN8"/>
-                            <outlet property="delegate" destination="Y1M-gT-lmq" id="QtZ-0I-wQg"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Add habits to home page" id="fur-ZU-4rS">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="36v-7t-7wz">
-                            <connections>
-                                <action selector="doneTapped:" destination="Y1M-gT-lmq" id="AKy-o6-QXK"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NCm-cz-j6I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="997" y="-1411"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="Vgx-Sx-cVV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ED-Za-pWv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="oKu-Wb-9sk"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EUK-90-CLp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.36385628170000001" green="0.2185911945" blue="0.14492904470000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.87409400069999998" green="1" blue="0.28349309750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="pxp-fN-fOO" kind="relationship" relationship="rootViewController" id="e5a-Yk-vsX"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Psk-fX-pA6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="86.956521739130437" y="-705.13392857142856"/>
+            <point key="canvasLocation" x="-243" y="-396"/>
         </scene>
     </scenes>
 </document>
