@@ -31,25 +31,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-7V-z70">
-                                <rect key="frame" x="41" y="152" width="331" height="331"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bjx-7V-z70" secondAttribute="height" multiplier="1:1" id="hyH-ee-c35"/>
-                                </constraints>
-                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green Butterfly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL5-mF-crV">
+                                <rect key="frame" x="41.5" y="453.5" width="289.5" height="35"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" red="0.027923015990377411" green="0.11591846446700504" blue="0.029181597809884031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REg-VL-bkP">
+                                <rect key="frame" x="191" y="664.5" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="VR2-Rg-3zK" kind="show" id="zth-oK-bB1"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.68025329082854946" green="0.78630631345177671" blue="0.72736355431757604" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.72106235470000002" green="0.93916560910000002" blue="0.80218082509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="bjx-7V-z70" firstAttribute="centerX" secondItem="yvB-an-h60" secondAttribute="centerX" id="InJ-QY-B2E"/>
-                            <constraint firstItem="bjx-7V-z70" firstAttribute="centerY" secondItem="yvB-an-h60" secondAttribute="centerY" multiplier="0.7" id="fEo-Ht-8lC"/>
-                            <constraint firstItem="bjx-7V-z70" firstAttribute="width" secondItem="syf-JV-Vnd" secondAttribute="width" multiplier="0.8" id="lqX-gH-3hn"/>
+                            <constraint firstItem="cL5-mF-crV" firstAttribute="centerY" secondItem="yvB-an-h60" secondAttribute="centerY" multiplier="1.04" id="2jb-pd-bMt"/>
+                            <constraint firstItem="REg-VL-bkP" firstAttribute="centerY" secondItem="yvB-an-h60" secondAttribute="centerY" multiplier="1.5" id="TiO-pI-iAh"/>
+                            <constraint firstItem="cL5-mF-crV" firstAttribute="centerX" secondItem="yvB-an-h60" secondAttribute="centerX" multiplier="0.9" id="mAK-So-Xg9"/>
+                            <constraint firstItem="REg-VL-bkP" firstAttribute="centerX" secondItem="yvB-an-h60" secondAttribute="centerX" id="u8Q-MP-9hW"/>
+                            <constraint firstItem="cL5-mF-crV" firstAttribute="width" secondItem="syf-JV-Vnd" secondAttribute="width" multiplier="0.7" id="uIg-mt-g3q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yvB-an-h60"/>
                     </view>
-                    <connections>
-                        <outlet property="viewforlayer" destination="bjx-7V-z70" id="PpR-ZW-zdu"/>
-                        <segue destination="VR2-Rg-3zK" kind="show" id="Qbw-Mz-Wes"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urG-EQ-cTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +68,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Yz-ky-tzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ycw-iC-fXG" kind="relationship" relationship="viewControllers" id="gZD-Bt-iMf"/>
