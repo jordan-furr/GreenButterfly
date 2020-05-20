@@ -7,22 +7,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="oby-cb-pfc">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="a2B-cY-BTU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JgY-C2-zvZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0081794057039999996" green="0.61281424760000003" blue="0.37149119380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="KWb-9R-bW7"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="dhk-7T-TwZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ur-EZ-mtw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="80" y="77"/>
-        </scene>
         <!--Launch View Controller-->
         <scene sceneID="l4y-cO-JOV">
             <objects>
@@ -58,7 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urG-EQ-cTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1654" y="-247"/>
+            <point key="canvasLocation" x="-1826" y="-247"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Mw-y9-gXk">
@@ -73,12 +57,14 @@
                     </tabBar>
                     <connections>
                         <segue destination="Ycw-iC-fXG" kind="relationship" relationship="viewControllers" id="gZD-Bt-iMf"/>
-                        <segue destination="a2B-cY-BTU" kind="relationship" relationship="viewControllers" id="bNl-Z0-pjS"/>
+                        <segue destination="csK-nN-Fe5" kind="relationship" relationship="viewControllers" id="tb1-lx-gux"/>
+                        <segue destination="w01-yy-lAc" kind="relationship" relationship="viewControllers" id="Sh0-CZ-Ub9"/>
+                        <segue destination="zRZ-j1-Fq7" kind="relationship" relationship="viewControllers" id="pbd-gV-emv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1CS-hB-mJD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-861" y="-247"/>
+            <point key="canvasLocation" x="-962" y="-247"/>
         </scene>
         <!--Home-->
         <scene sceneID="JS8-LB-HCm">
@@ -88,7 +74,37 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jPV-sV-ge7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-243" y="-396"/>
+            <point key="canvasLocation" x="-1213" y="173"/>
+        </scene>
+        <!--EnergySaved-->
+        <scene sceneID="kiM-f2-aNx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="EnergySaved" id="zRZ-j1-Fq7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="26L-oe-7bf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7Q-hQ-UAO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1022" y="168"/>
+        </scene>
+        <!--Leaderboards-->
+        <scene sceneID="3d7-jF-HoK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Leaderboards" id="csK-nN-Fe5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UGg-Db-Py9"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="77r-TF-kuy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="173"/>
+        </scene>
+        <!--Goals-->
+        <scene sceneID="FdJ-99-e7P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Goals" id="w01-yy-lAc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="d85-7G-sfV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1A6-aP-W7p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-825" y="173"/>
         </scene>
     </scenes>
 </document>

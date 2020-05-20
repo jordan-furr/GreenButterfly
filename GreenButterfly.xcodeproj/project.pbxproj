@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C527BF39246E34CE000D1B1A /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C527BF38246E34CE000D1B1A /* LaunchViewController.swift */; };
 		C527BF3B246E36D0000D1B1A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C527BF3A246E36D0000D1B1A /* Home.storyboard */; };
+		C53224222475E93F008EC7BD /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53224212475E93F008EC7BD /* ChartsViewController.swift */; };
+		C53224242475E976008EC7BD /* Leaderboards.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53224232475E976008EC7BD /* Leaderboards.storyboard */; };
+		C53224292475EF84008EC7BD /* Goals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53224282475EF84008EC7BD /* Goals.storyboard */; };
 		C53A43BB24661D6D00BDB22E /* HabitListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */; };
 		C53A43BD24661F6500BDB22E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43BC24661F6500BDB22E /* DetailViewController.swift */; };
 		C53A43BF2466D9C500BDB22E /* AddHabitsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */; };
@@ -22,11 +25,15 @@
 		C5794DCD2464DA8600DE2554 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5794DCC2464DA8600DE2554 /* CoreDataStack.swift */; };
 		C5794DCF2464DB5100DE2554 /* Habit+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5794DCE2464DB5100DE2554 /* Habit+Convenience.swift */; };
 		C5794DD12464DC0200DE2554 /* HabitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5794DD02464DC0200DE2554 /* HabitController.swift */; };
+		C5E09A6C2475F2100073069A /* EnergySaved.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5E09A6B2475F2100073069A /* EnergySaved.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C527BF38246E34CE000D1B1A /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		C527BF3A246E36D0000D1B1A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		C53224212475E93F008EC7BD /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChartsViewController.swift; path = "GreenButterfly/Controllers/View Controllers/ChartsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		C53224232475E976008EC7BD /* Leaderboards.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leaderboards.storyboard; sourceTree = "<group>"; };
+		C53224282475EF84008EC7BD /* Goals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goals.storyboard; sourceTree = "<group>"; };
 		C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListTableViewController.swift; sourceTree = "<group>"; };
 		C53A43BC24661F6500BDB22E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitsTableViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +49,7 @@
 		C5794DCC2464DA8600DE2554 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		C5794DCE2464DB5100DE2554 /* Habit+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Habit+Convenience.swift"; sourceTree = "<group>"; };
 		C5794DD02464DC0200DE2554 /* HabitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitController.swift; sourceTree = "<group>"; };
+		C5E09A6B2475F2100073069A /* EnergySaved.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EnergySaved.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 			children = (
 				C53A43BA24661D6D00BDB22E /* HabitListTableViewController.swift */,
 				C53A43BC24661F6500BDB22E /* DetailViewController.swift */,
+				C53224212475E93F008EC7BD /* ChartsViewController.swift */,
 				C53A43BE2466D9C500BDB22E /* AddHabitsTableViewController.swift */,
 				C527BF38246E34CE000D1B1A /* LaunchViewController.swift */,
 			);
@@ -127,6 +136,9 @@
 			children = (
 				C527BF3A246E36D0000D1B1A /* Home.storyboard */,
 				C5794DB524646A8000DE2554 /* Main.storyboard */,
+				C5E09A6B2475F2100073069A /* EnergySaved.storyboard */,
+				C53224232475E976008EC7BD /* Leaderboards.storyboard */,
+				C53224282475EF84008EC7BD /* Goals.storyboard */,
 				C5794DBD24646A8900DE2554 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -200,6 +212,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53224292475EF84008EC7BD /* Goals.storyboard in Resources */,
+				C53224242475E976008EC7BD /* Leaderboards.storyboard in Resources */,
+				C5E09A6C2475F2100073069A /* EnergySaved.storyboard in Resources */,
 				C5794DBF24646A8900DE2554 /* LaunchScreen.storyboard in Resources */,
 				C5794DBC24646A8900DE2554 /* Assets.xcassets in Resources */,
 				C5794DB724646A8000DE2554 /* Main.storyboard in Resources */,
@@ -223,6 +238,7 @@
 				C53A43BF2466D9C500BDB22E /* AddHabitsTableViewController.swift in Sources */,
 				C5794DB224646A8000DE2554 /* SceneDelegate.swift in Sources */,
 				C527BF39246E34CE000D1B1A /* LaunchViewController.swift in Sources */,
+				C53224222475E93F008EC7BD /* ChartsViewController.swift in Sources */,
 				C5794DCD2464DA8600DE2554 /* CoreDataStack.swift in Sources */,
 				C53A43BD24661F6500BDB22E /* DetailViewController.swift in Sources */,
 			);

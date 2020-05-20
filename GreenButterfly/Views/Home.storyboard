@@ -153,11 +153,11 @@
             </objects>
             <point key="canvasLocation" x="995.65217391304361" y="-1411.6071428571429"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="Vgx-Sx-cVV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ED-Za-pWv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="paperplane.fill" catalog="system" selectedImage="paperplane.fill" id="IqL-2A-fUI"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="butterflyIcon.png" selectedImage="icons8-parantica-sita-butterfly-51" id="6Im-gr-60c"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EUK-90-CLp">
@@ -177,6 +177,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="paperplane.fill" catalog="system" width="128" height="121"/>
+        <image name="butterflyIcon.png" width="128" height="128"/>
+        <image name="icons8-parantica-sita-butterfly-51" width="23" height="15"/>
     </resources>
 </document>
