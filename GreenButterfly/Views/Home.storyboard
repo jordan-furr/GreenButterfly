@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--GREEN BUTTERFLY-->
+        <!--My Habits-->
         <scene sceneID="byz-S2-y6I">
             <objects>
                 <tableViewController id="pxp-fN-fOO" customClass="HabitListTableViewController" customModule="GreenButterfly" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="130" id="N45-br-ET1" customClass="HabitTableViewCell" customModule="GreenButterfly" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationLevel="1" indentationWidth="10" reuseIdentifier="habitCell" rowHeight="130" id="N45-br-ET1" customClass="HabitTableViewCell" customModule="GreenButterfly" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N45-br-ET1" id="buO-Vd-aHK">
@@ -68,7 +68,7 @@
                             <outlet property="delegate" destination="pxp-fN-fOO" id="f6E-mx-qMI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="GREEN BUTTERFLY" id="U2t-zt-xh6">
+                    <navigationItem key="navigationItem" title="My Habits" id="U2t-zt-xh6">
                         <barButtonItem key="rightBarButtonItem" image="icons8-themes-100" id="Bud-Qr-fvu">
                             <color key="tintColor" red="0.0081794057039999996" green="0.61281424760000003" blue="0.37149119380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -165,7 +165,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.36385628170000001" green="0.2185911945" blue="0.14492904470000001" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.87409400069999998" green="1" blue="0.28349309750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.75820416489999998" green="0.79131136869999996" blue="0.97921954310000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

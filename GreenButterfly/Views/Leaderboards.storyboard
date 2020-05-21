@@ -14,7 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="7a2-3z-z5u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leaderboards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qf-XO-jsA">
+                                <rect key="frame" x="30" y="64" width="168" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.14700983502538068" blue="0.093592808160224902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7qf-XO-jsA" firstAttribute="leading" secondItem="MN8-VB-0UL" secondAttribute="leading" constant="30" id="2zQ-v7-cjE"/>
+                            <constraint firstItem="7qf-XO-jsA" firstAttribute="top" secondItem="MN8-VB-0UL" secondAttribute="top" constant="20" id="uko-qe-Oy7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MN8-VB-0UL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="icons8-leaderboard-100" selectedImage="icons8-leaderboard-100" id="Fje-32-Uom"/>

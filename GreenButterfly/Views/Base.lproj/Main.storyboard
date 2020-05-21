@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7e5-Vr-ft9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VR2-Rg-3zK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -24,9 +24,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REg-VL-bkP">
                                 <rect key="frame" x="191" y="664.5" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
-                                <connections>
-                                    <segue destination="VR2-Rg-3zK" kind="show" id="zth-oK-bB1"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.72106235470000002" green="0.93916560910000002" blue="0.80218082509999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -42,18 +39,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="urG-EQ-cTG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1826" y="-247"/>
+            <point key="canvasLocation" x="-1912" y="-247"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6Mw-y9-gXk">
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" id="VR2-Rg-3zK" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rRJ-mA-llE"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Yz-ky-tzE">
+                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Yz-ky-tzE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0081794057039999996" green="0.61281424760000003" blue="0.37149119380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.67585540727861726" green="0.54580598067955599" blue="0.88939562182741116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ycw-iC-fXG" kind="relationship" relationship="viewControllers" id="gZD-Bt-iMf"/>
