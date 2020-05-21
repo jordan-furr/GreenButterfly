@@ -17,10 +17,15 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="MN8-VB-0UL"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-leaderboard-100" selectedImage="icons8-leaderboard-100" id="Fje-32-Uom"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWh-L6-Nza" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="114" y="63"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-leaderboard-100" width="30" height="21"/>
+    </resources>
 </document>

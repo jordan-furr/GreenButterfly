@@ -69,7 +69,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="GREEN BUTTERFLY" id="U2t-zt-xh6">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Bud-Qr-fvu">
+                        <barButtonItem key="rightBarButtonItem" image="icons8-themes-100" id="Bud-Qr-fvu">
+                            <color key="tintColor" red="0.0081794057039999996" green="0.61281424760000003" blue="0.37149119380000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <segue destination="Y1M-gT-lmq" kind="show" id="u6w-5J-yzA"/>
                             </connections>
@@ -153,11 +154,11 @@
             </objects>
             <point key="canvasLocation" x="995.65217391304361" y="-1411.6071428571429"/>
         </scene>
-        <!--Item-->
+        <!--Navigation Controller-->
         <scene sceneID="Vgx-Sx-cVV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8ED-Za-pWv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="butterflyIcon.png" selectedImage="icons8-parantica-sita-butterfly-51" id="6Im-gr-60c"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-parantica-sita-butterfly-100" selectedImage="icons8-parantica-sita-butterfly-100" id="6Im-gr-60c"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EUK-90-CLp">
@@ -177,7 +178,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="butterflyIcon.png" width="128" height="128"/>
-        <image name="icons8-parantica-sita-butterfly-51" width="23" height="15"/>
+        <image name="icons8-parantica-sita-butterfly-100" width="26" height="18"/>
+        <image name="icons8-themes-100" width="22" height="24"/>
     </resources>
 </document>

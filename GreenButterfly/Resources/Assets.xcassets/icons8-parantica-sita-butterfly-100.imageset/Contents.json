@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "icons8-parantica-sita-butterfly-100.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
